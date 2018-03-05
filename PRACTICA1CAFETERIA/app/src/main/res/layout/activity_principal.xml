@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.adrianch.practica1_cafeteria.Principal">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:gravity="center"
+        android:text="CAFETERÍA"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <RadioGroup
+        android:id="@+id/rdGrupCafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdbtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Americano ($20)" />
+
+        <RadioButton
+            android:id="@+id/rdbtncap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Capuchino ($48)" />
+
+        <RadioButton
+            android:id="@+id/rdbtnexp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Expresso ($30)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad:"
+                android:textColor="@android:color/background_dark" />
+
+            <EditText
+                android:id="@+id/edtxtcan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXTRAS"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <CheckBox
+        android:id="@+id/chkbxazu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Azúcar ($1)" />
+
+    <CheckBox
+        android:id="@+id/chkbxcr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crema ($1)" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DESCRIPCION DE LA COMPRA"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtxtdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:soundEffectsEnabled="false" />
+
+    <Button
+        android:id="@+id/btntot"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:onClick="OnClickTotal"
+        android:text="TOTAL" />
+
+
+</LinearLayout>
